@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Sm-V9-qaZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="S8r-aI-38a">
+            <objects>
+                <viewController id="0Sm-V9-qaZ" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="huj-T5-zTd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="JLZ-49-17D">
+                                <rect key="frame" x="165" y="413" width="84" height="70.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXA-OS-pkm">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yPG-kA-n8q">
+                                        <rect key="frame" x="17.5" y="39.5" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="darkMode:" destination="0Sm-V9-qaZ" eventType="valueChanged" id="Qvz-Jw-DCD"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JLZ-49-17D" firstAttribute="centerY" secondItem="huj-T5-zTd" secondAttribute="centerY" id="6p4-Vf-8J1"/>
+                            <constraint firstItem="JLZ-49-17D" firstAttribute="centerX" secondItem="huj-T5-zTd" secondAttribute="centerX" id="PjU-Di-Nic"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RLj-A9-xG1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="KdV-Ca-egq"/>
+                    <connections>
+                        <outlet property="darkModeLabel" destination="FXA-OS-pkm" id="dBG-iE-QZY"/>
+                        <outlet property="darkModeSwitch" destination="yPG-kA-n8q" id="fVs-5A-3SA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8oO-ix-dbi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2648" y="17"/>
+        </scene>
+    </scenes>
+</document>

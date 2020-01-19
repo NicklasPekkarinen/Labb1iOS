@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FC1-iQ-0St">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About me-->
+        <scene sceneID="wr8-wN-xGx">
+            <objects>
+                <viewController id="FC1-iQ-0St" customClass="AboutMeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Jo-Cs-XqR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gusum-karta" translatesAutoresizingMaskIntoConstraints="NO" id="LDT-TD-WJK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="9gC-zB-y8h"/>
+                                    <constraint firstAttribute="height" constant="310" id="x1r-sL-SCp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oEX-Qc-ke0">
+                                <rect key="frame" x="11" y="318" width="352" height="269"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="269" id="K9c-Q4-Y65"/>
+                                </constraints>
+                                <string key="text">My name is Nicklas Pekkarinen.
+I was born in Gusum, Östergötland in 1989 
+and I am currently studying app development 
+at IT-Högskolan in Gothenburg, Sweden.
+My main interest is music. I play the guitar
+and keyboard and I have taken courses in
+music production. Other interests include 
+movies, books, art and quizzes.
+
+I first came into contact with programming
+through the game Exapunks and quickly
+developed an interest that I decided to pursue
+after talking with a friend who had done the same.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gxE-OY-VQJ" firstAttribute="leading" secondItem="LDT-TD-WJK" secondAttribute="leading" id="PkC-0P-GX7"/>
+                            <constraint firstItem="LDT-TD-WJK" firstAttribute="top" secondItem="gxE-OY-VQJ" secondAttribute="top" id="QeY-SA-xOz"/>
+                            <constraint firstItem="oEX-Qc-ke0" firstAttribute="leading" secondItem="gxE-OY-VQJ" secondAttribute="leading" constant="11" id="V95-u9-ajA"/>
+                            <constraint firstItem="gxE-OY-VQJ" firstAttribute="trailing" secondItem="oEX-Qc-ke0" secondAttribute="trailing" constant="12" id="iy0-vv-fPo"/>
+                            <constraint firstItem="LDT-TD-WJK" firstAttribute="trailing" secondItem="gxE-OY-VQJ" secondAttribute="trailing" id="nNF-hf-V2Z"/>
+                            <constraint firstItem="oEX-Qc-ke0" firstAttribute="top" secondItem="LDT-TD-WJK" secondAttribute="bottom" constant="8" id="t9l-RB-tW6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gxE-OY-VQJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About me" id="YLk-M3-3XC"/>
+                    <connections>
+                        <outlet property="aboutMeText" destination="oEX-Qc-ke0" id="SmT-fN-0tO"/>
+                        <outlet property="gusumMap" destination="LDT-TD-WJK" id="vAq-Op-k1o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fqy-hd-0Yt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221.5999999999999" y="-353.9730134932534"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gusum-karta" width="800" height="800"/>
+    </resources>
+</document>

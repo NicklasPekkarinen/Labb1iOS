@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD66B3BC23D1C84700510F8D /* AboutMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD66B3BA23D1C84700510F8D /* AboutMe.storyboard */; };
+		BD66B3BF23D1C85D00510F8D /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD66B3BE23D1C85D00510F8D /* AboutMeViewController.m */; };
+		BDAE284623CF4DE1006A0443 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAE284523CF4DE1006A0443 /* Colors.xcassets */; };
+		BDAE284C23CF603A006A0443 /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAE284A23CF603A006A0443 /* SettingsViewController.storyboard */; };
+		BDAE284F23CF607B006A0443 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAE284E23CF607B006A0443 /* SettingsViewController.m */; };
+		BDAE285A23CF7403006A0443 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAE285923CF7403006A0443 /* Theme.m */; };
 		BDF00C4C23C89648002120D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF00C4B23C89648002120D7 /* AppDelegate.m */; };
 		BDF00C4F23C89648002120D7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF00C4E23C89648002120D7 /* SceneDelegate.m */; };
 		BDF00C5223C89648002120D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF00C5123C89648002120D7 /* ViewController.m */; };
@@ -16,6 +22,8 @@
 		BDF00C5D23C8964D002120D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF00C5C23C8964D002120D7 /* main.m */; };
 		BDF00C6723C8964D002120D7 /* Labb_1_MyAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF00C6623C8964D002120D7 /* Labb_1_MyAppTests.m */; };
 		BDF00C7223C8964D002120D7 /* Labb_1_MyAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF00C7123C8964D002120D7 /* Labb_1_MyAppUITests.m */; };
+		BDF00CC723CC910A002120D7 /* GameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF00CC623CC910A002120D7 /* GameViewController.storyboard */; };
+		BDF00CCA23CC91CC002120D7 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF00CC923CC91CC002120D7 /* GameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD66B3BB23D1C84700510F8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Labb 1 MyApp/Base.lproj/AboutMe.storyboard"; sourceTree = "<group>"; };
+		BD66B3BD23D1C85D00510F8D /* AboutMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
+		BD66B3BE23D1C85D00510F8D /* AboutMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
+		BDAE284523CF4DE1006A0443 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		BDAE284B23CF603A006A0443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Labb 1 MyApp/Base.lproj/SettingsViewController.storyboard"; sourceTree = "<group>"; };
+		BDAE284D23CF607B006A0443 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		BDAE284E23CF607B006A0443 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		BDAE285823CF7403006A0443 /* Theme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		BDAE285923CF7403006A0443 /* Theme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
 		BDF00C4723C89648002120D7 /* Labb 1 MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Labb 1 MyApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF00C4A23C89648002120D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BDF00C4B23C89648002120D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +71,9 @@
 		BDF00C6D23C8964D002120D7 /* Labb 1 MyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Labb 1 MyAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF00C7123C8964D002120D7 /* Labb_1_MyAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Labb_1_MyAppUITests.m; sourceTree = "<group>"; };
 		BDF00C7323C8964D002120D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF00CC623CC910A002120D7 /* GameViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameViewController.storyboard; sourceTree = "<group>"; };
+		BDF00CC823CC91CC002120D7 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		BDF00CC923CC91CC002120D7 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +101,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD66B3B323D1C1C400510F8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD66B3BA23D1C84700510F8D /* AboutMe.storyboard */,
+				BD66B3BD23D1C85D00510F8D /* AboutMeViewController.h */,
+				BD66B3BE23D1C85D00510F8D /* AboutMeViewController.m */,
+				BDF00CC623CC910A002120D7 /* GameViewController.storyboard */,
+				BDF00CC823CC91CC002120D7 /* GameViewController.h */,
+				BDF00CC923CC91CC002120D7 /* GameViewController.m */,
+				BDAE284A23CF603A006A0443 /* SettingsViewController.storyboard */,
+				BDAE284D23CF607B006A0443 /* SettingsViewController.h */,
+				BDAE284E23CF607B006A0443 /* SettingsViewController.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BDF00C3E23C89648002120D7 = {
 			isa = PBXGroup;
 			children = (
@@ -104,17 +140,21 @@
 		BDF00C4923C89648002120D7 /* Labb 1 MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				BD66B3B323D1C1C400510F8D /* Views */,
+				BDAE285823CF7403006A0443 /* Theme.h */,
+				BDAE285923CF7403006A0443 /* Theme.m */,
 				BDF00C4A23C89648002120D7 /* AppDelegate.h */,
 				BDF00C4B23C89648002120D7 /* AppDelegate.m */,
 				BDF00C4D23C89648002120D7 /* SceneDelegate.h */,
 				BDF00C4E23C89648002120D7 /* SceneDelegate.m */,
+				BDF00C5323C89648002120D7 /* Main.storyboard */,
 				BDF00C5023C89648002120D7 /* ViewController.h */,
 				BDF00C5123C89648002120D7 /* ViewController.m */,
-				BDF00C5323C89648002120D7 /* Main.storyboard */,
 				BDF00C5623C8964D002120D7 /* Assets.xcassets */,
 				BDF00C5823C8964D002120D7 /* LaunchScreen.storyboard */,
 				BDF00C5B23C8964D002120D7 /* Info.plist */,
 				BDF00C5C23C8964D002120D7 /* main.m */,
+				BDAE284523CF4DE1006A0443 /* Colors.xcassets */,
 			);
 			path = "Labb 1 MyApp";
 			sourceTree = "<group>";
@@ -240,8 +280,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDAE284623CF4DE1006A0443 /* Colors.xcassets in Resources */,
 				BDF00C5A23C8964D002120D7 /* LaunchScreen.storyboard in Resources */,
+				BDF00CC723CC910A002120D7 /* GameViewController.storyboard in Resources */,
 				BDF00C5723C8964D002120D7 /* Assets.xcassets in Resources */,
+				BDAE284C23CF603A006A0443 /* SettingsViewController.storyboard in Resources */,
+				BD66B3BC23D1C84700510F8D /* AboutMe.storyboard in Resources */,
 				BDF00C5523C89648002120D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,10 +311,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDAE285A23CF7403006A0443 /* Theme.m in Sources */,
+				BD66B3BF23D1C85D00510F8D /* AboutMeViewController.m in Sources */,
+				BDF00CCA23CC91CC002120D7 /* GameViewController.m in Sources */,
 				BDF00C5223C89648002120D7 /* ViewController.m in Sources */,
 				BDF00C4C23C89648002120D7 /* AppDelegate.m in Sources */,
 				BDF00C5D23C8964D002120D7 /* main.m in Sources */,
 				BDF00C4F23C89648002120D7 /* SceneDelegate.m in Sources */,
+				BDAE284F23CF607B006A0443 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +354,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BD66B3BA23D1C84700510F8D /* AboutMe.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD66B3BB23D1C84700510F8D /* Base */,
+			);
+			name = AboutMe.storyboard;
+			sourceTree = "<group>";
+		};
+		BDAE284A23CF603A006A0443 /* SettingsViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDAE284B23CF603A006A0443 /* Base */,
+			);
+			name = SettingsViewController.storyboard;
+			sourceTree = "<group>";
+		};
 		BDF00C5323C89648002120D7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

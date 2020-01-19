@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cma-Hf-d8l">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game-->
+        <scene sceneID="rSR-C5-X9e">
+            <objects>
+                <viewController id="Cma-Hf-d8l" customClass="GameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dre-Qb-48s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFp-TO-FGv">
+                                <rect key="frame" x="183" y="142" width="9" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8f-nI-UKJ">
+                                <rect key="frame" x="177" y="289.5" width="21" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="VmJ-BR-hsX">
+                                <rect key="frame" x="106" y="318.5" width="162" height="31"/>
+                                <connections>
+                                    <action selector="guessSliderChange:" destination="Cma-Hf-d8l" eventType="valueChanged" id="DTl-VM-2ZJ"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBP-1Q-XiK">
+                                <rect key="frame" x="166" y="356" width="43" height="30"/>
+                                <state key="normal" title="Guess"/>
+                                <connections>
+                                    <action selector="guess:" destination="Cma-Hf-d8l" eventType="touchUpInside" id="nYo-t8-9eY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VmJ-BR-hsX" firstAttribute="top" secondItem="Q8f-nI-UKJ" secondAttribute="bottom" constant="8" id="7EQ-s7-bHo"/>
+                            <constraint firstItem="VBP-1Q-XiK" firstAttribute="top" secondItem="VmJ-BR-hsX" secondAttribute="bottom" constant="7.5" id="8Re-36-WKY"/>
+                            <constraint firstItem="SFp-TO-FGv" firstAttribute="top" secondItem="Y3r-Ni-fPP" secondAttribute="top" constant="142" id="CVN-6s-dg1"/>
+                            <constraint firstItem="Q8f-nI-UKJ" firstAttribute="centerX" secondItem="Y3r-Ni-fPP" secondAttribute="centerX" id="EPN-28-q03"/>
+                            <constraint firstItem="VmJ-BR-hsX" firstAttribute="centerY" secondItem="dre-Qb-48s" secondAttribute="centerY" id="Enn-WY-gHh"/>
+                            <constraint firstItem="SFp-TO-FGv" firstAttribute="centerX" secondItem="Y3r-Ni-fPP" secondAttribute="centerX" id="EyG-f0-f3i"/>
+                            <constraint firstItem="VBP-1Q-XiK" firstAttribute="centerX" secondItem="Y3r-Ni-fPP" secondAttribute="centerX" id="rDn-xu-Mwb"/>
+                            <constraint firstItem="Y3r-Ni-fPP" firstAttribute="trailing" secondItem="VmJ-BR-hsX" secondAttribute="trailing" constant="109" id="uRO-cG-hxL"/>
+                            <constraint firstItem="VmJ-BR-hsX" firstAttribute="leading" secondItem="Y3r-Ni-fPP" secondAttribute="leading" constant="108" id="ySj-5r-bLj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y3r-Ni-fPP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Game" id="NEW-fh-bJa"/>
+                    <connections>
+                        <outlet property="guessBtn" destination="VBP-1Q-XiK" id="vzr-rH-J4P"/>
+                        <outlet property="guessNumber" destination="Q8f-nI-UKJ" id="tSg-4D-VzL"/>
+                        <outlet property="guessSlider" destination="VmJ-BR-hsX" id="Odf-7b-YdD"/>
+                        <outlet property="secretNumberLabel" destination="SFp-TO-FGv" id="gFb-3o-pN2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f1m-rx-dQW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863.7681159420292" y="16.741071428571427"/>
+        </scene>
+    </scenes>
+</document>
